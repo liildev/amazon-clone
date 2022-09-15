@@ -1,0 +1,73 @@
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+
+  &__price {
+    display: flex;
+
+    strong {
+      margin-left: 5px;
+    }
+  }
+
+  &__gift {
+    display: flex;
+    align-items: center;
+
+    input {
+      margin-right: 5px;
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 30px;
+    
+    color: #111;
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 2px;
+    margin-top: 10px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtotal {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 612px) {
+  .subtotal {
+    width: 150px;
+      height: 150px;
+
+      &__price {
+        font-size: 12px;
+        
+      }
+
+      &__gift {
+        overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+      }
+
+      button {
+        font-size: 12px;
+        height: 40px;
+      }
+  }
+}

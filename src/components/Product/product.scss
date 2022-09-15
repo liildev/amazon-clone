@@ -1,0 +1,130 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin: 10px;
+  padding: 20px;
+
+  width: 100%;
+  // max-width: 400px;
+  min-width: 100px;
+  transition: 0.2s ease-in-out;
+  background-color: white;
+  z-index: 1;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+  }
+
+  &__info {
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  &__price {
+    margin-top: 5px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+
+    &__img {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
+  }
+
+  &__image {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    margin-top: 10px;
+    padding: 0.5rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    padding: 10px;
+
+    &__info {
+      font-size: 12px;
+    }
+
+    &__rating__img {
+      width: 1.2rem !important;
+      height: 1.2rem !important;
+    }
+
+    &__image {
+      height: 130px;
+      width: 100%;
+    }
+
+    button {
+      padding: 0.3rem;
+    }
+  }
+}
+
+@media (max-width: 612px) {
+  .product {
+    padding: 10px;
+    &__info {
+      font-size: 10px;
+    }
+
+    &__rating__img {
+      width: 1.2rem !important;
+      height: 1.2rem !important;
+    }
+
+    &__image {
+      height: 100px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 482px) {
+  .product {
+    height: 250px;
+    padding: 10px 5px;
+    &__info {
+      p {
+        font-size: 12px !important;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+    &__rating__img {
+      width: 1.2rem !important;
+      height: 1.2rem !important;
+    }
+    &__image {
+      height: 100px;
+      width: 100%;
+    }
+
+    button {
+      font-size: 10px;
+    }
+  }
+}

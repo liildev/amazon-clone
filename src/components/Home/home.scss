@@ -1,0 +1,41 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__image {
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+
+  &__row {
+    display: flex;
+    z-index: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__image {
+      height: 70vh;
+      margin-bottom: -100px;
+    }
+  }
+}
+
+@media (max-width: 482px) {
+  .home__image {
+    height: 50vh;
+    margin-bottom: -100px;
+  }
+}
