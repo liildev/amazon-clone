@@ -53,3 +53,32 @@
     color: #111;
   }
 }
+
+@media (max-width: 612px) {
+  .payment {
+    &__title {
+      flex: 0.2;
+
+      h3, p {
+        font-size: 12px!important;
+      }
+    }
+  }
+}
+
+@media (max-width: 482px) {
+  .payment {
+  
+    &__section {
+      display: flex;
+      padding: 10px;
+      margin: 0 1px;
+      border-bottom: 1px solid lightgray;
+    }
+  
+
+      h3, p {
+        font-size: 12px!important;
+      }
+  }
+}

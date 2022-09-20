@@ -48,7 +48,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .checkoutProduct {
     display: flex;
     margin-top: 50px;
@@ -62,21 +62,26 @@
       height: 130px !important;
     }
 
-    &__rating{
+    &__rating {
       &__img {
-      width: 2rem !important;
-      height: 1.5rem !important;}
+        width: 2rem !important;
+        height: 1.5rem !important;
+      }
     }
 
     &__title {
       font-size: 14px;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
     }
 
     button {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 482px) {
+  .checkoutProduct {
+    &__title {
       font-size: 12px;
     }
   }

@@ -1,23 +1,16 @@
 .footer {
-  width: 100%;
-  position: sticky;
   display: flex;
   align-items: center;
-  flex-direction: column;
   background-color: #232f3e;
-  padding: 5rem 2rem 1rem 2rem;
+  padding: 5rem 2rem;
 
   &__block {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 20px;
-
     img {
       width: 150px;
     }
 
     p {
+      margin-top: 1rem;
       color: #fff;
     }
   }
@@ -26,6 +19,7 @@
     width: 70%;
     display: flex;
     justify-content: space-between;
+    margin-left: auto;
 
     .menu {
       display: flex;
@@ -58,27 +52,34 @@
   }
 }
 
-@media (max-width: 1096px) {
-  .footer__menu {
-    width: 90%;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .footer {
-    padding: 3rem 1rem;
+    flex-direction: column-reverse;
+    padding: 5rem 1rem 3rem 1rem;
 
     &__menu {
       width: 100%;
+    }
 
-      h4 {
-        font-size: 16px !important;
-      }
+    &__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      ul {
-        li {
-          font-size: 12px !important;
-        }
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    h4 {
+      font-size: 16px !important;
+    }
+
+    ul {
+      li {
+        font-size: 12px !important;
       }
     }
   }
@@ -90,11 +91,7 @@
 
     &__menu {
       h4 {
-        font-size: 14px !important;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
+        font-size: 12px !important;
       }
 
       ul {
@@ -120,29 +117,21 @@
 
 @media (max-width: 482px) {
   .footer {
-    padding-top: 2rem;
-
     &__menu {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+
       h4 {
-        font-size: 12px !important;
+        font-size: 20px!important;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
       }
 
       ul {
         li {
-          font-size: 10px !important;
+          font-size: 14px !important;
         }
-      }
-    }
-
-    &__block {
-      display: flex;
-      flex-direction: column;
-
-      img {
-        width: 100px;
-      }
-      p {
-        font-size: 12px;
       }
     }
   }

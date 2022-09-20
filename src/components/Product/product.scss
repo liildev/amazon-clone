@@ -1,15 +1,11 @@
 .product {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
 
   margin: 10px;
   padding: 20px;
 
-  width: 100%;
-  // max-width: 400px;
-  min-width: 100px;
+  width: 45%;
   transition: 0.2s ease-in-out;
   background-color: white;
   z-index: 1;
@@ -40,7 +36,8 @@
 
   &__image {
     height: 200px;
-    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
     object-fit: contain;
     margin-bottom: 1rem;
   }
@@ -51,6 +48,7 @@
     border-color: #a88734 #9c7e31 #846a29;
     margin-top: 10px;
     padding: 0.5rem;
+    align-self: center;
 
     &:hover {
       opacity: 0.8;
@@ -60,67 +58,34 @@
 
 @media (max-width: 768px) {
   .product {
-    padding: 10px;
-
-    &__info {
-      font-size: 12px;
-    }
-
-    &__rating__img {
-      width: 1.2rem !important;
-      height: 1.2rem !important;
-    }
-
-    &__image {
-      height: 130px;
-      width: 100%;
-    }
-
-    button {
-      padding: 0.3rem;
-    }
-  }
-}
-
-@media (max-width: 612px) {
-  .product {
-    padding: 10px;
-    &__info {
-      font-size: 10px;
-    }
-
-    &__rating__img {
-      width: 1.2rem !important;
-      height: 1.2rem !important;
-    }
-
-    &__image {
-      height: 100px;
-      width: 100%;
-    }
+    width: 97%;
   }
 }
 
 @media (max-width: 482px) {
   .product {
+    width: 94%;
     height: 250px;
-    padding: 10px 5px;
-    &__info {
-      p {
-        font-size: 12px !important;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-      }
+
+    p {
+      font-size: 12px !important;
     }
+
     &__rating__img {
       width: 1.2rem !important;
       height: 1.2rem !important;
     }
+
     &__image {
       height: 100px;
       width: 100%;
+    }
+
+    small {
+      font-size: 10px;
+    }
+    strong {
+      font-size: 10px;
     }
 
     button {

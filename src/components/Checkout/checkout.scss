@@ -67,3 +67,30 @@
     }
   }
 }
+
+@media (max-width: 482px) {
+  .checkout {
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      padding: 10px 10px 10px 0px;
+      font-size: 22px;
+    }
+
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      margin-top: 1rem;
+      width: 100%;
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+}
